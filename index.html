@@ -9,8 +9,8 @@
 <body>
   <div class="container">
     <header>
-    <h1>My Webpage</h1>
-    <p>This is a sample Library Management webpage to learn about creation of lists,tables and forms in HTML as a part of the Mind Empowered Internship.To check out the Mind Empowered Website <a href="https://www.mind-empowered.org/">Here</a>.</p>
+    <center><h1>My Webpage</h1></center>
+    <p>This is a sample Library Management webpage to learn about creation of lists,tables and forms in HTML as a part of the Mind Empowered Internship.To check out the Mind Empowered Website <a class="links" href="https://www.mind-empowered.org/">Mind Empowered</a>.</p>
 </header>
 
 <section>
@@ -24,7 +24,7 @@
 </ul>
 
 <h2>Genres of Books Available</h2>
-<ol>
+<ol class="orderedlist">
     <li>Action and Adventure</li>
     <li>Classics</li>
     <li>Detective and Mystery</li>
@@ -34,9 +34,11 @@
     <li>Romance</li>
     <li>Fiction</li>
 </ol></div>
-<img class="image" src="image.jpg">
+<img class="image" src="background.jpg">
 
 </div>
+<div class="content1">
+  <div class="tables">
 <h2>Books available</h2>
 <table border="1px" cellpadding="10px" cellspacing="5px">
     <thead><tr>
@@ -97,28 +99,28 @@
     </tr>
   </tbody>
 </table>
+</div>
 
-
-
-    <h2>Registration Form</h2>
-    <p>Register to get the library membership</p>
+<div class="forms">
+    <h2 class="heading">Registration Form</h2>
+    <p class="paragraph">Register to get the library membership</p>
     <form>
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required><br>
-      
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" required><br>
-      
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-      
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
-      
-        <button type="submit">Submit</button>
-      </form>
-      
-</section>
+      <div class="form-group">
+        <input type="text" name="first-name" placeholder="First Name" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="last-name" placeholder="Last Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+</section></div>
 </div>
 <footer>
     <p>To get reccomendations for books go to <a href="https://www.goodreads.com/shelf/show/recommended">Great books to read</a></p>
